@@ -2,7 +2,46 @@
 <html>
 <head>
   <style>
-    /* Add your CSS here */
+  div span b {
+    color: purple;
+  }
+
+  ul > li {
+    font-weight: bold;
+  }
+
+  ul ~ a {
+    color: green;
+  }
+
+  input[type="checkbox"]:checked {
+    background-color: yellow;
+  }
+
+  input:focus {
+    border: 2px solid red;
+  }
+
+  input:disabled {
+    background-color: grey;
+    color: white;
+  }
+
+  ul li:first-child {
+    background-color: blue;
+  }
+
+  a:last-of-type {
+    text-decoration: underline;
+  }
+
+  li:not(:first-child) {
+    color: orange;
+  }
+
+  input[type="text"][required] {
+    box-shadow: 1px 1px 5px black;
+  }
   </style>
 </head>
 <body>
