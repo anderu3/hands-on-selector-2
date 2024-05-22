@@ -15,9 +15,29 @@
   }
 
   input[type="checkbox"]:checked {
-    background-color: yellow;
+         background-color: yellow !important; /* Using !important to ensure override */
+         -webkit-appearance: none; /* Disables native styling */
+         appearance: none;
+         width: 20px; /* Custom size */
+         height: 20px; /* Custom size */
+       }
+  input[type="checkbox"]:checked:after {
+         content: "✓";
+         display: block;
+         color: black;
+         position: relative;
+         left: 5px; /* Center the check mark */
+         top: -3px;
   }
 
+  .box{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        padding:20px;
+        margin:10px;
+        border:1px solid black;
+  }
   input:focus {
     border: 2px solid red;
   }
@@ -26,7 +46,7 @@
     background-color: grey;
     color: white;
   }
-
+  
   ul li:first-child {
     background-color: blue;
   }
